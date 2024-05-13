@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Basis Grotesque Arabic Pro';
+  outline: none;
+}
+
+input {
+  outline: none;
+}
+
+.floating-label {
+  transition: 0.25s ease-out;
+  cursor: text;
+  color: #7D7C93;
+}
+
+.floating-input:focus+.floating-label,
+.floating-input:not(:placeholder-shown)+.floating-label {
+  font-size: 14px;
+  color: #7D7C93;
+  top: -5px;
+  left: 0px;
+  padding: 0px 5px 0px 5px;
+}
+
+button {
+  position: relative;
+  transition: all 500ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+label div {
+  transition: 0.5s;
+}
+
+#chkbox:checked + label div {
+  background-color: #114280;
+  border: 1px solid #114280;
+}
+
+a {
+  color: #114280;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important; /* Change the 30px value to increase/decrease the area covered */
+    -webkit-text-fill-color: black !important; /* Change the text color */
+}
+
+.react-international-phone-country-selector-button {
+  height: 100% !important;
+  border: none !important;
+  border-bottom: 1px solid #E5E5E5 !important;
+}
+
+.react-international-phone-input {
+  border: none !important;
+  width: 100% !important;
+  border-bottom: 1px solid #E5E5E5 !important;
+  height: 100% !important;
+  font-size: 18px !important;
+}
+
+@media screen and (max-width: 780px) {
+  .registerProgressBar {
+    display: none;
+  }
+
+  h1 {
+    font-size: 25px !important;
+  }
+
+  h2 {
+    text-align: center;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 22px !important;
+  }
+
+  .passcodeContainer {
+    width: 100%;
+    padding: 20px;
+  }
+}

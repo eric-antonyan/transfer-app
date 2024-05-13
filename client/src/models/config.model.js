@@ -1,0 +1,1 @@
+export const api = "https://f94319ab-55ce-40ed-94f0-bdc64da8f6a6-00-39tt120ugwq6i.sisko.replit.dev:3001/";
